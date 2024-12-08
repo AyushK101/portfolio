@@ -1,7 +1,9 @@
 
 const ExperienceSection = () => {
   return (
-    <div>ExperienceSection</div>
+    <div>ExperienceSection
+      <i className="h-96 w-96">🌚</i>
+    </div>
   )
 }
 

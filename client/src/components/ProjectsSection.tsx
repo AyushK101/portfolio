@@ -37,14 +37,14 @@ const projectConfig = [
 const ProjectsSection = () => {
   return (
     <>
-      <div className="font-extrabold text-7xl my-2 text-orange-500">RECENT</div>
-      <div className="text-[#353334] text-7xl font-extrabold mb-2">PROJECTS</div>
+      <div className="main-text-head1">RECENT</div>
+      <div className="main-text-head2">PROJECTS</div>
       {
         projectConfig.map(item => (
-          <div className="flex min-h-40 justify-between px-5 py-4 gap-2" >
-            <div className="flex items-center justify-center rounded-xl border">
+          <div className="flex flex-col sm:flex-row min-h-40 justify-between px-5 py-4 gap-2" key={item.link}>
+            <div className="flex items-center justify-center rounded-xl  shadow-orange-700 shadow-md">
               <div className="rounded-xl">
-                <img src={item.image} alt={item.Name} height={10} width={150} className="rounded-xl" />
+                <img src={item.image} alt={item.Name} height={10} width={150} className="rounded-xl " />
               </div>
             </div>
             <div className="flex flex-col items-center">

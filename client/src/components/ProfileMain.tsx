@@ -8,8 +8,8 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const ProfileMain = () => {
   return (
-    <div className='px-5 py-8 rounded-lg bg-white border min-w-80 min-h-56 max-h-fit max-w-56'>
-    <div className='flex flex-col text-center items-center gap-5'>
+    <div className='px-5 py-8 rounded-lg bg-white border min-w-full md:min-w-80 min-h-56 max-h-fit max-w-56'>
+    <div className='flex flex-col text-center items-center gap-5 p-2'>
         <img src="/portfolio.png" alt="photo" height={500} width={250} />
         <span className="text-black text-4xl font-extrabold">
             AYUSH <br /> KUMAR

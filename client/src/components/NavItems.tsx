@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const NavItems = () => {
   return (
     <>
-        <div className="flex justify-around py-3 px-8 gap-x-8 bg-navbar rounded-lg  absolute top-7 text-white">
+        <div className="flex justify-around py-3 px-8 gap-x-8  bg-navbar rounded-lg  absolute top-7 text-white">
             <Link to={'/'}>
               <FaHome size={25}  className="text-orange-500"/>
             </Link>

@@ -9,9 +9,9 @@ const ErrorPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  text-gray-800">
+    <div className="flex flex-col items-center justify-center min-h-screen  text-gray-800 p-4">
       <h1 className="text-6xl font-bold text-red-500">404</h1>
-      <p className="text-xl mt-4 text-white">
+      <p className="text-xl mt-4 text-white text-center">
         The path <span className="font-mono text-blue-600">"{location.pathname}"</span> does not exist.
       </p>
       <button

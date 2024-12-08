@@ -73,25 +73,25 @@ const toolsConfig2 = {
 const ToolsSection = () => {
   return (
     <>
-      <div className="font-extrabold text-7xl text-orange-500">LANGUAGES </div>
+      <div className="main-text-head1">LANGUAGES </div>
       <div className="">
         {langConfig.map((item) => (
-          <Icon fontSize={60} icon={item.name} className="inline-block p-1" />
+          <Icon fontSize={60} icon={item.name} className="inline-block p-1" key={item.name}/>
         ))}
       </div>
 
-      <div className="text-[#353334] text-7xl font-extrabold mt-4">& TOOLS</div>
+      <div className="main-text-head2">& TOOLS</div>
       <div className="">
         <div>
           <p className="text-[#4E4948] text-xl font-bold ">databases</p>
           {toolsConfig2.databases.map((item) => (
-            <Icon fontSize={60} icon={item.name} className="inline-block p-1" />
+            <Icon fontSize={60} icon={item.name} className="inline-block p-1" key={item.name}/>
           ))}
         </div>
         <div>
           <p className="text-[#4E4948] text-xl font-bold ">protocols</p>
           {toolsConfig2.protocols.map((item) => (
-            <Icon fontSize={60} icon={item.name} className="inline-block p-1" />
+            <Icon fontSize={60} icon={item.name} className="inline-block p-1" key={item.name}/>
           ))}
         </div>
         <div>
@@ -105,25 +105,25 @@ const ToolsSection = () => {
         <div>
           <p className="text-[#4E4948] text-xl font-bold ">backend</p>
           {toolsConfig2.backend.map((item) => (
-            <Icon fontSize={60} icon={item.name} className="inline-block p-1" />
+            <Icon fontSize={60} icon={item.name} className="inline-block p-1" key={item.name}/>
           ))}
         </div>
         <div>
           <p className="text-[#4E4948] text-xl font-bold ">frontend</p>
           {toolsConfig2.frontend.map((item) => (
-            <Icon fontSize={60} icon={item.name} className="inline-block p-1" />
+            <Icon fontSize={60} icon={item.name} className="inline-block p-1" key={item.name} />
           ))}
         </div>
         <div>
           <p className="text-[#4E4948] text-xl font-bold ">versionControl</p>
           {toolsConfig2.versionControl.map((item) => (
-            <Icon fontSize={60} icon={item.name} className="inline-block p-1" />
+            <Icon fontSize={60} icon={item.name} className="inline-block p-1" key={item.name}/>
           ))}
         </div>
         <div>
           <p className="text-[#4E4948] text-xl font-bold ">operatingSystems</p>
           {toolsConfig2.operatingSystems.map((item) => (
-            <Icon fontSize={60} icon={item.name} className="inline-block p-1" />
+            <Icon fontSize={60} icon={item.name} className="inline-block p-1" key={item.name}/>
           ))}
         </div>
       </div>

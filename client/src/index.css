@@ -4,7 +4,11 @@
 
 
 @layer utilities {
-  .main-text-head {
-    @apply 
+  .main-text-head1 {
+    @apply font-extrabold text-5xl md:text-7xl text-orange-500 pt-3 
+  }
+  
+  .main-text-head2 {
+    @apply text-[#353334] text-5xl md:text-7xl font-extrabold mt-4
   }
 }
