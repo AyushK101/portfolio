@@ -1,4 +1,4 @@
-import { Header, HeroSection } from "./components"
+import { Footer, Header, HeroSection } from "./components"
 
 function App() {
 
@@ -6,8 +6,7 @@ function App() {
     <>
       <Header/>
       <HeroSection/>
-      <div className="min-h-screen bg-black">
-      </div>
+      <Footer/>     
     </>
   )
 }

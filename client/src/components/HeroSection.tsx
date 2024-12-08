@@ -6,9 +6,11 @@ const HeroSection = () => {
   return (
     <>
         <Container>
-            <div className='pt-24 bg-red-50 flex'>
+            <div className='pt-24 md:flex gap-20 '>
                 <ProfileMain/>
+                <div className='flex-grow'>
                 <Outlet />
+                </div>
             </div>
         </Container>
     </>

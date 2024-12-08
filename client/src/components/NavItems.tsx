@@ -1,28 +1,28 @@
-import { CiHome } from "react-icons/ci";
-import { CiFolderOn } from "react-icons/ci";
-import { IoBagCheckOutline } from "react-icons/io5";
-import { GoTools } from "react-icons/go";
-import { TfiWrite } from "react-icons/tfi";
+import { FaHome } from "react-icons/fa";
+import { FaFolderOpen } from "react-icons/fa";
+import { PiBagFill } from "react-icons/pi";
+import { FaTools } from "react-icons/fa";
+import { RiContactsFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 const NavItems = () => {
   return (
     <>
-        <div className="flex justify-around py-2 px-6 gap-x-5 bg-slate-500 rounded-lg absolute top-7 text-white">
+        <div className="flex justify-around py-3 px-8 gap-x-8 bg-navbar rounded-lg  absolute top-7 text-white">
             <Link to={'/'}>
-              <CiHome size={27} />
+              <FaHome size={25}  className="text-orange-500"/>
             </Link>
             <Link to={'/projects'}>
-              <CiFolderOn size={27}/>
+              <FaFolderOpen size={25}className="text-orange-500"/>
             </Link>
             <Link to={'/experience'}>
-              <IoBagCheckOutline size={27}/>
+              <PiBagFill size={25}className="text-orange-500"/>
             </Link>
             <Link to={'/tools'}>
-              <GoTools size={27} />
+              <FaTools size={25} className="text-orange-500"/>
             </Link>
             <Link to={'/contact'}>
-              <TfiWrite size={27}  />
+              <RiContactsFill size={25}  className="text-orange-500"/>
             </Link>
       </div>
     </>

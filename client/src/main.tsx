@@ -3,11 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import HomeSection from './components/HomeSection.tsx'
-import ProjectsSection from './components/ProjectsSection.tsx'
-import ToolsSection from './components/ToolsSection.tsx'
-import ContactSection from './components/ContactSection.tsx'
-import ExperienceSection from './components/ExperienceSection.tsx'
+
+import { ContactSection, ErrorPage, ExperienceSection, HomeSection, ProjectsSection, ToolsSection } from './components'
 
 const router = createBrowserRouter([
   {
@@ -35,6 +32,10 @@ const router = createBrowserRouter([
         element: <ExperienceSection/>
       }
     ]
+  },
+  {
+    path: '*',
+    element: <ErrorPage/>
   }
 
 ])

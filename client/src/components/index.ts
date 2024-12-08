@@ -6,6 +6,8 @@ import ProjectsSection from "./ProjectsSection";
 import ToolsSection from "./ToolsSection";
 import ContactSection from "./ContactSection";
 import ExperienceSection from "./ExperienceSection";
+import Footer from './Footer';
+import ErrorPage from './ErrorPage';
 
 export {
     Header,
@@ -15,5 +17,8 @@ export {
     ProjectsSection,
     ToolsSection,
     ContactSection,
-    ExperienceSection
+    ExperienceSection,
+    Footer,
+    ErrorPage
+
 }
