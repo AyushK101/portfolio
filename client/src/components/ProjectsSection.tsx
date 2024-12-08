@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa"
+import GenericMotion from "./GenericMotion"
 
 const projectConfig = [
   {
@@ -36,13 +37,14 @@ const projectConfig = [
 
 const ProjectsSection = () => {
   return (
-    <>
+    <GenericMotion
+    >
       <div className="main-text-head1">RECENT</div>
       <div className="main-text-head2">PROJECTS</div>
       {
         projectConfig.map(item => (
           <div className="flex flex-col sm:flex-row min-h-40 justify-between px-5 py-4 gap-2" key={item.link}>
-            <div className="flex items-center justify-center rounded-xl  shadow-orange-700 shadow-md">
+            <div className="flex items-center justify-center rounded-xl  shadow-md shadow-stone-400">
               <div className="rounded-xl">
                 <img src={item.image} alt={item.Name} height={10} width={150} className="rounded-xl " />
               </div>
@@ -57,7 +59,7 @@ const ProjectsSection = () => {
           </div>
         ))
       }
-    </>
+    </GenericMotion>
   )
 }
 

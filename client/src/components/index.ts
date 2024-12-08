@@ -8,6 +8,7 @@ import ContactSection from "./ContactSection";
 import ExperienceSection from "./ExperienceSection";
 import Footer from './Footer';
 import ErrorPage from './ErrorPage';
+import GenericMotion from './GenericMotion';
 
 export {
     Header,
@@ -19,6 +20,6 @@ export {
     ContactSection,
     ExperienceSection,
     Footer,
-    ErrorPage
-
+    ErrorPage,
+    GenericMotion
 }

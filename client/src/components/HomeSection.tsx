@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import ContactSection from "./ContactSection";
 import ProjectsSection from "./ProjectsSection";
 
@@ -20,6 +21,22 @@ const config =[ {
 const HomeSection = () => {
   return (
     <div className="flex flex-col ">
+      <motion.div
+        initial={{
+                    x: 80,
+                    opacity: 0
+                  }}
+                  animate={{
+                    x:0,
+                    opacity: 1,
+                  }}
+                  viewport={{
+                    once: false
+                  }}
+                  transition={{
+                    duration: .5
+                  }}
+      >
       <div className="main-text-head1">FULL STACK </div>
       <div className="main-text-head2"> WEB ENGINEER</div>
       <div className="text-[#4E4948] text-xl font-bold " >
@@ -37,6 +54,7 @@ const HomeSection = () => {
           ))
         }
       </div>
+      </motion.div>
        <ProjectsSection/>
        <ContactSection/>
 

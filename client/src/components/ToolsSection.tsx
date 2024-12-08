@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import GenericMotion from "./GenericMotion";
 
 const langConfig = [
   {
@@ -61,7 +62,7 @@ const toolsConfig2 = {
     { name: "skill-icons:aws-dark" },
     { name: "skill-icons:vercel-light" },
     { name: "vscode-icons:file-type-nginx" },
-    { name: "skill-icons:cloudflare-dark" },
+    // { name: "skill-icons:cloudflare-dark" },
     { name: "skill-icons:workers-dark" },
   ],
   operatingSystems: [
@@ -72,7 +73,7 @@ const toolsConfig2 = {
 
 const ToolsSection = () => {
   return (
-    <>
+    <GenericMotion>
       <div className="main-text-head1">LANGUAGES </div>
       <div className="">
         {langConfig.map((item) => (
@@ -127,7 +128,7 @@ const ToolsSection = () => {
           ))}
         </div>
       </div>
-    </>
+    </GenericMotion>
   );
 };
 
